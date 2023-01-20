@@ -1,0 +1,1 @@
+This project Demonstrates how to leverage Selenium and TestNG to test Search function and validate results. 
