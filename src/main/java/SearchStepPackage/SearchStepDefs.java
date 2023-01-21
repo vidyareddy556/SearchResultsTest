@@ -43,4 +43,11 @@ public class SearchStepDefs {
         driver.quit();
     }
 
+    @Then("I should see a message {string}")
+    public void verifyNoResultsMessage(String searchResults){
+        WebElement resultsContainer = driver.findElement(By.id("main"));
+        int results = resultsContainer.findElements(By.tagName("li")).size();
+        assertTrue(results > 0);
+    }
+
 }
